@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boys  Shopping</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* background-color: #f5f5f5; */
+            background-image: url("data:image/jpeg;base64,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");
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+        }
+        .dress-image img:hover
+        {
+           box-shadow: 15px 15px 20px ; 
+        }
+        header {
+            background-color: #333;
+            color: rgb(0, 70, 246);
+            text-align: center;
+            padding: 10px;
+        }
+
+        h1 {
+            margin: 0;
+            color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: transparent;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .dress {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .dress-image {
+            flex:1;
+            padding: 10px;
+            
+        }
+
+        .dress-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 30px;
+        }
+
+        .dress-details {
+            flex: 2;
+            padding: 10px;
+        }
+
+        .dress-title {
+            font-size: 24px;
+            margin: 0;
+            color: rgb(0, 70, 246);
+        }
+
+        .dress-description {
+            margin-top: 10px;
+            font-size: 16px;
+            color: rgb(0, 70, 246);
+        }
+
+        .dress-price {
+            font-size: 20px;
+            color: #e74c3c;
+        }
+
+        .add-to-cart {
+            margin-top: 10px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore ur interests</h1>
+    </header>
+    <div class="container">
+        <div class="dress">
+            <div class="dress-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTodX0jf1i6kz_ubMhFxKNyEGDrIAbunrsYkq46sV96V0wI4kZ6OiargR9-pyIcKZDodko&usqp=CAU" height="200px" width=200px alt="Dress 1">
+            </div>
+            <div class="dress-details">
+                <h2 class="dress-title">TIOR</h2>
+                <p class="dress-description">Kids dangri party wear.</p>
+                <p class="dress-price">₹767 21% Off</p>
+                <div class="add-to-cart button">
+                    <a href="buy.html">
+                    <button>Buy Now</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+            <div class="dress">
+                <div class="dress-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ3BiVTWi0xe_MDq63gx0wfy_3Yc5oHqtwnypXxjj8vFoCI3dZXLDre9LbFPvYqVzaeZuH387RjX7RUFiPzCnYafcjGUEvfwuk5dQgicbD76NOv7ouBBGh-aw&usqp=CAE" height="200px" width=200px alt="Dress 1">
+                </div>
+                <div class="dress-details">
+                    <h2 class="dress-title">Akhilam</h2>
+                    <p class="dress-description">Boys Green Text Print Sweatshirt And Pant Set.</p>
+                    <p class="dress-price">₹779 61% Off</p>
+                    <div class="add-to-cart button">
+                        <a href="buy.html">
+                        <button>Buy Now</button>
+                        </a>
+                    </div>
+                </div>  
+            </div>
+            <div class="dress">
+                <div class="dress-image">
+                    <img src="https://www.onefridayworld.com/cdn/shop/files/1_a7b4e310-04b2-4dc4-8ae2-434697688492_533x.jpg?v=1697611386" height="200px" width=200px alt="Dress 1">
+                </div>
+                <div class="dress-details">
+                    <h2 class="dress-title">Analog fashions.</h2>
+                    <p class="dress-description">The trendy fashionised suit.</p>
+                    <p class="dress-price">₹999 11% Off</p>
+                    <div class="add-to-cart button">
+                        <a href="buy.html">
+                        <button>Buy Now</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="dress">
+                <div class="dress-image">
+                    <img src="https://www.thedaycollections.com/wp-content/uploads/2017/07/boy-kids-fashion.png" height="200px" width=200px alt="Dress 1">
+                </div>
+                <div class="dress-details">
+                    <h2 class="dress-title">PAREVDEE </h2>
+                    <p class="dress-description">The day collectuon boys kids fashion.</p>
+                    <p class="dress-price">₹500 20% Off</p>
+                    <div class="add-to-cart button">
+                        <a href="buy.html">
+                        <button>Buy Now</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="dress">
+                <div class="dress-image">
+                    <img src="https://www.onefridayworld.com/cdn/shop/files/1_a7b4e310-04b2-4dc4-8ae2-434697688492_533x.jpg?v=1697611386" height="200px" width=200px alt="Dress 1">
+                </div>
+                <div class="dress-details">
+                    <h2 class="dress-title">ishin </h2>
+                    <p class="dress-description">Babra suit clothing set.</p>
+                    <p class="dress-price">₹1110 31% Off</p>
+                    <div class="add-to-cart button">
+                        <a href="buy.html">
+                        <button>Buy Now</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="dress">
+                <div class="dress-image">
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRWv0K_KJ4gjsbfwACor_ou_JivsXaYjx14FIKwb5jHz5l7ohFS8pkbt9ngMq10qM4p6av2LhOYqDoFEceBmTPNHqLgxrxl5HgTNGF1m4TS&usqp=CAE" height="200px" width=200px alt="Dress 1">
+                </div>
+                <div class="dress-details">
+                    <h2 class="dress-title">Sagar Impex</h2>
+                    <p class="dress-description">Boys Party(Festive) Pant Shirt, Bow Tie, Suspenders  (Black).</p>
+                    <p class="dress-price">₹990 11% Off</p>
+                    <div class="add-to-cart button">
+                        <a href="buy.html">
+                        <button>Buy Now</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="dress">
+                <div class="dress-image">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSop2YHSlYeRo8xuRWSOlZT_DkTTfLL9ROR6QR5fRvJx9h-LiUPn-Dd1gMkivhRqmzSZwauigpxlVprFhHxQbvQQQmKwl23rZOjI151V6BckSQlu4r8UCiY&usqp=CAE" height="200px" width=200px alt="Dress 1">
+                </div>
+                <div class="dress-details">
+                    <h2 class="dress-title">Mackly</h2>
+                    <p class="dress-description">The perfect cotton coat.</p>
+                    <p class="dress-price">₹700 71% Off</p>
+                    <div class="add-to-cart button">
+                        <a href="buy.html">
+                        <button>Buy Now</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>

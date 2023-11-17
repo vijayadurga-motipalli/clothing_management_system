@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dress Shopping</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* background-color: #f5f5f5; */
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0QK-WqGtCRd3K4Hd5Hxls124R27KDAx95Ds0viOf7ov0PXUN1ZbQ7UOXXPUS0DUedlUs&usqp=CAU");
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            opacity: 100;
+        }
+
+        header {
+            background-color: #333;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 10px;
+        }
+        .dress-image img:hover
+        {
+           box-shadow: 15px 15px 20px ; 
+        }
+        h1 {
+            margin: 0;
+        }
+        .dress-title:hover
+        {
+            font-size: 36px;
+        }
+        .dress-description:hover
+         {
+            
+            font-size: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: transparent;
+            box-shadow: 0 0 10px rgba(8, 50, 239, 0.1);
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .dress {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .dress-image {
+            flex:1;
+            padding: 10px;
+        }
+
+        .dress-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 30px;
+        }
+
+        .dress-details {
+            flex: 2;
+            padding: 10px;
+        }
+
+        .dress-title {
+            font-size: 24px;
+            margin: 0;
+            color: rgb(55, 0, 255);
+        }
+
+        .dress-description {
+            margin-top: 10px;
+            font-size: 16px;
+            color: rgb(55, 0, 255);
+        }
+
+        .dress-price {
+            font-size: 20px;
+            color: #e74c3c;
+        }
+
+        .add-to-cart {
+            margin-top: 10px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore ur interests</h1>
+    </header>
+    <div class="container">
+        <div class="dress">
+            <div class="dress-image">
+                <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/jean/o/1/u/28-kttladiesjeans854-kotty-original-imags7tess6zjqjx.jpeg?q=70" height="200px" width=200px alt="Dress 1">
+            </div>
+            <div class="dress-details">
+                <h2 class="dress-title">KOTTY</h2>
+                <p class="dress-description">Women Flared High Rise Blue Jeans.</p>
+                <p class="dress-price">₹999 21% Off</p>
+                <div class="add-to-cart button">
+                    <a href="buy.html">
+                    <button>Buy Now</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+            <div class="dress">
+                <div class="dress-image">
+                    <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/sweatshirt/s/9/k/-original-imagqzxdatfa8pnw.jpeg?q=70" height="200px" width=200px alt="Dress 1">
+                </div>
+                <div class="dress-details">
+                    <h2 class="dress-title">LEVI'S</h2>
+                    <p class="dress-description">Women Full Sleeve Striped Sweatshirt</p>
+                    <p class="dress-price">₹1,233 61% Off</p>
+                    <div class="add-to-cart button">
+                        <a href="buy.html">
+                        <button>Buy Now</button>
+                        </a>
+                    </div>
+                </div>  
+            </div>
+            <div class="dress">
+                <div class="dress-image">
+                    <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/jean/o/w/y/30-blue-furr-bell-bottom-urban-a-line-original-imagk47rqhxn8pcf.jpeg?q=70" height="200px" width=200px alt="Dress 1">
+                </div>
+                <div class="dress-details">
+                    <h2 class="dress-title">URBAN A-LINE</h2>
+                    <p class="dress-description">Women Flared Mid Rise Blue Jeans.</p>
+                    <p class="dress-price">₹500 11% Off</p>
+                    <div class="add-to-cart button">
+                        <a href="buy.html">
+                        <button>Buy Now</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="dress">
+                <div class="dress-image">
+                    <img src="https://m.media-amazon.com/images/I/71bKFEHUs4L._UY879_.jpg" height="200px" width=200px alt="Dress 1">
+                </div>
+                <div class="dress-details">
+                    <h2 class="dress-title">KOTTY </h2>
+                    <p class="dress-description">Women's Printed Georgette With Mirror Lace Border Saree with Blouse.</p>
+                    <p class="dress-price">₹1200 20% Off</p>
+                    <div class="add-to-cart button">
+                        <a href="buy.html">
+                        <button>Buy Now</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="dress">
+                <div class="dress-image">
+                    <img src="https://rukminim2.flixcart.com/image/832/832/kirr24w0-0/jean/i/w/b/32-kttwomensjeans708-kotty-original-imafyhxgnax4fhpw.jpeg?q=70" height="200px" width=200px alt="Dress 1">
+                </div>
+                <div class="dress-details">
+                    <h2 class="dress-title">KOTTY  </h2>
+                    <p class="dress-description">Womens High Rise Cotton Lycra Regular Fit Solid Jeans</p>
+                    <p class="dress-price">₹1110 31% Off</p>
+                    <div class="add-to-cart button">
+                        <a href="buy.html">
+                        <button>Buy Now</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="dress">
+                <div class="dress-image">
+                    <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/jumpsuit/7/j/5/m-khjs000005-ketch-original-imagkxd38wkh3a4h.jpeg?q=70" height="200px" width=200px alt="Dress 1">
+                </div>
+                <div class="dress-details">
+                    <h2 class="dress-title">KETCH</h2>
+                    <p class="dress-description">Checkered Women Jumpsuit</p>
+                    <p class="dress-price">₹8990 11% Off</p>
+                    <div class="add-to-cart button">
+                        <a href="buy.html">
+                        <button>Buy Now</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="dress">
+                <div class="dress-image">
+                    <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/shopsy-jean/9/v/f/m-lv-side-pocket-ladies-jeans-black-leavess-original-imagsf8xvbmwfyza.jpeg?q=70" height="200px" width=200px alt="Dress 1">
+                </div>
+                <div class="dress-details">
+                    <h2 class="dress-title">ZODIO </h2>
+                    <p class="dress-description">Women Boyfriend Mid Rise Black Jeans.</p>
+                    <p class="dress-price">₹1995 71% Off</p>
+                    <div class="add-to-cart button">
+                        <a href="buy.html">
+                        <button>Buy Now</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>

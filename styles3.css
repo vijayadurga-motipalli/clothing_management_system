@@ -1,0 +1,244 @@
+body {
+    background-image: url('data:image/jpeg;base64,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');
+    background-color: rgba(0, 0, 0, 0.5); /* Fallback background color with transparency */
+    background-size: cover; /* Adjust this to control how the background image is sized */
+}
+.fashion-logo {
+    width: 100px;
+    height: 90px;
+    background: transparent;
+    border-radius: 60px;
+}
+
+#navItem1 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+#navItem2 {
+    color: #323f4b;
+    font-family: "Arial";
+}
+
+#navItem3 {
+    color: #323f4b;
+    font-family: "Arial";
+}
+
+#navItem4 {
+    color: #323f4b;
+    font-family: "Arial";
+}
+
+
+
+.wcu-section {
+    background-color: transparent;
+}
+
+.wcu-section-heading {
+    color: #183b56;
+    font-family: "Arial";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.wcu-section-description {
+    color: #5a7184;
+    font-family: "Arial";
+    font-size: 16px;
+}
+
+.wcu-card {
+    text-align: center;
+    background-color:transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e5eaf4;
+    border-radius: 16px;
+}
+
+.wcu-card-image {
+    width: 87px;
+    height: 90px;
+}
+
+.wcu-card-title {
+    color: #323f4b;
+    font-family: "Arial";
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.wcu-card-description {
+    color: #7b8794;
+    font-family: "Arial";
+    font-size: 16px;
+}
+
+.offers {
+    color: #323f4b;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.explore-menu-section {
+    background-color:transparent;
+}
+
+.menu-section-heading {
+    color: #183b56;
+    font-family: "Arial";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.menu-item-image {
+    border-radius: 16px;
+}
+
+.menu-card-title {
+    color: #323f4b;
+    font-family: "Arial";
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 24px;
+}
+
+.menu-item-link {
+    color: #ec5042;
+    font-family: "Arial";
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.menu-item-card {
+    border-radius: 16px;
+    transition: transform 0.3s ease;
+}
+
+.menu-item-card:hover {
+    transform: scale(1.1);
+}
+
+.fashion-section {
+    background-color: #f9fbfe;
+}
+
+.fashion-section-img {
+    width: 270px;
+}
+
+.fashion-section-heading {
+    color: #183b56;
+    font-family: "Arial";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.fashion-section-description {
+    color: #5a7184;
+    font-family: "Arial";
+    font-size: 16px;
+}
+
+.delivery-and-payment-section {
+    background-color: white;
+}
+
+.delivery-and-payment-section-img {
+    width: 270px;
+}
+
+.delivery-and-payment-section-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.delivery-and-payment-section-description {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.payment-card-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 28px;
+}
+
+.thanking-customers-section {
+    background-image: radial-gradient(#fbf9f3, #f6df8d);
+}
+
+.thanking-customers-section-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.thanking-customers-section-description {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.thanking-customers-section-img {
+    width: 270px;
+    margin-bottom: 20px;
+}
+
+.thanking-customers-section-modal-title {
+    color: #d0b200;
+    font-weight: 800;
+}
+
+.follow-us-section {
+    background-color: white;
+}
+
+.follow-us-section-heading {
+    text-align: center;
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.follow-us-icon-container {
+    background-color: #faf7e8;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin: 15px;
+    padding-top: 22px;
+    padding-bottom: 14px;
+    padding-right: 16px;
+    padding-left: 22px;
+}
+
+.icon {
+    color: #d0b200;
+    font-size: 35px;
+}
+
+.footer-section {
+    background-color: #0d2436;
+}
+
+.footer-section-mail-id {
+    color: #959ead;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.footer-section-address {
+    color: #959ead;
+    font-family: "Roboto";
+    font-size: 14px;
+}

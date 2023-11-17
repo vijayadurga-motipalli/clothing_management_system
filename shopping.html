@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="shopping.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://thumbs.dreamstime.com/b/tailoring-emblem-mannequin-dummy-banner-lettering-sew-happiness-fashion-logo-design-vector-eps-120339304.jpg" class="fashion-logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" id="navItem1" href="#wcuSection">
+                        Why choose us
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    <a class="nav-link" href="#exploreMenuSection" id="navItem2">Explore Menu</a>
+                    <a class="nav-link" href="#deliveryPaymentSection" id="navItem3">Delivery & Payment</a>
+                    <a class="nav-link" href="#followUsSection" id="navItem4">Follow Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="banner-section-bg-container d-flex justify-content-center flex-column">
+        <div class="text-center">
+            <h1 class="banner-heading mb-3">Beautiful in Its Simplicity.</h1>
+            <p class="banner-caption mb-4">Don't be slow! Our prices are low.</p>
+            <a href="#exploreMenuSection">
+                <button class="custom-button">View Menu</button>
+            </a>
+        </div>
+    </div>
+    <div class="wcu-section pt-5 pb-5" id="wcuSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="wcu-section-heading">What makes us different?</h1>
+                    <p class="wcu-section-description">
+                        We're different because we offer a truly unique shopping experience. We have a wide selection of dresses to choose from, all at competitive prices. But what really sets us apart is our commitment to customer service. We want to help you find the perfect dress for your needs, and we'll go the extra mile to make sure you're happy with your purchase.
+                    </p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="wcu-card p-3 mb-3">
+                        <img src="https://jimitcard.com/wp-content/uploads/2018/07/img_0421-300x300.jpg" class="wcu-card-image" />
+                        <h1 class="wcu-card-title mt-3">five-star service</h1>
+                        <p class="wcu-card-description">
+                            we offer a wide selection of products, competitive prices, and excellent customer service, so you can shop with confidence.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="wcu-card p-3 mb-3">
+                        <img src="data:image/jpeg;base64,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" class="wcu-card-image" />
+                        <h1 class="wcu-card-title mt-3">Spring Collection</h1>
+                        <p class="wcu-card-description">
+                            Shop our new arrivals every week for the latest trends in fashion, home goods, and more. Sign up for our email list to be the first to know.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="wcu-card p-3 mb-3">
+                        <img src="https://t3.ftcdn.net/jpg/01/65/60/02/360_F_165600288_Q1PISUCJMsJy6LIpivQVXuo9AaCTwTKC.jpg" class="wcu-card-image" />
+                        <h1 class="wcu-card-title mt-3">Best Offers</h1>
+                        <p class="wcu-card-description">
+                            Food Coupons & Offers upto
+                            <span class="offers">50% OFF</span>
+                            and Exclusive Promo Codes on All Online Food Orders.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="explore-menu-section pt-5 pb-5" id="exploreMenuSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="banner1">
+                        <div class="content">
+                          <p class="para">Time to shine</p>
+                          <p class="para">Time to shine</p>
+                          <p class="para">Time to shine</p>
+                          <p class="para">Time to shine</p>
+                          <p class="para">Time to shine</p>
+                          <p class="para">Time to shine</p>
+                          <p class="para">Time to shine</p>
+                          <p class="para">Time to shine</p>
+                        </div>
+                      </div>
+                      <h1 class="menu-section-heading mt-2">Find The Perfect Dress For You</h1>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="shadow menu-item-card p-3 mb-3 ">
+                        <img src="https://img.freepik.com/free-photo/attractive-stylish-smiling-woman-choosing-apparel-clothing-store_285396-4642.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Women</h1>
+                        <a href="women.html" class="menu-item-link">
+                            View All
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://img.freepik.com/free-photo/young-man-choosing-cloths-menswear-shop_1303-30756.jpg?size=626&ext=jpg&ga=GA1.1.1880011253.1699315200&semt=ais" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Men</h1>
+                        <a href="men.html" class="menu-item-link">
+                            View All
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div> 
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3 ">
+                        <img src="https://img.freepik.com/premium-photo/fashion-boy-girl-stylish-clothes-colored-wall-b_86390-1599.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Kids Wear </h1>
+                        <a href="kidswear.html" class="menu-item-link">
+                            View All
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3 ">
+                        <img src="https://d2rdhxfof4qmbb.cloudfront.net/wp-content/uploads/20181127134241/iStock-594937948.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Winter Wear</h1>
+                        <a href="winterwear.html" class="menu-item-link">
+                            View All
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fashion-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <div class="text-center">
+                        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRN40TG2MBiMQ7d-S3hOHgrzFKx7kfzrSnDRpWVatg2pj9Ce_cT" class="fashion-section-img" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-7">
+                    <h1 class="fashion-section-heading">
+                        Explore more new arrivals! Be trendy Be Simplicity!
+                    </h1>
+                    <p class="fashion-section-description">
+                        Say no to boring arrivals and start new trndy arrivals.Be georgeous and look eligent.Don't waste time on offine purchase and start online purchases.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="delivery-and-paytment-section pt-5 pb-5" id="deliveryPaymentSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5 order-1 order-md-2">
+                    <div class="text-center">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/delivery-payment-section-img.png" class="delivery-and-payment-section-img" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 order-2 order-md-1">
+                    <h1 class="delivery-and-payment-section-heading">
+                        Delivery and Payment
+                    </h1>
+                    <p class="delivery-and-payment-section-description">
+                        Experience a seamless and stress-free payment process with our extensive range of payment options. With our live tracking feature, you can follow your food's journey to your doorstep in real-time—it's an exciting sight to see! And here's the icing on the cake: enjoy a 5% discount on every order when you choose to pay online. So why wait? Order now and enjoy the convenience of online payment while saving!
+                    </p>
+                    <a href="#exploreMenuSection">
+                        <button class="custom-button">Order Now</button>
+                    </a>
+                    <div class="mt-3">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/visa-card-img.png" class="payment-card-img" />
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/master-card-img.png" class="payment-card-img" />
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/paypal-card-img.png" class="payment-card-img" />
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/american-express-img.png" class="payment-card-img" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thanking-customers-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
+                    <h1 class="thanking-customers-section-heading">
+                        Thank you for being a valuable customer to us.
+                    </h1>
+                    <p class="thanking-customers-section-description">
+                        We have a surprise gift for you
+                    </p>
+                    <div class="d-md-none">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png" class="thanking-customers-section-img" />
+                    </div>
+                    <div>
+                        <button type="button" class="custom-button" data-toggle="modal" data-target="#exampleModal">
+                            Redeem Gift
+                        </button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog mt-5">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title thanking-customers-section-modal-title" id="exampleModalLabel">
+                                            Gift Voucher
+                                        </h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="https://img.freepik.com/free-vector/golden-gift-voucher-template_23-2148789014.jpg" class="w-100" />
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                            Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 d-none d-md-block">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png" class="thanking-customers-section-img" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="follow-us-section pt-5 pb-5" id="followUsSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="follow-us-section-heading">Connect with us</h1>
+                </div>
+                <div class="col-12">
+                    <div class="d-flex flex-row justify-content-center">
+                        <div class="follow-us-icon-container">
+                            <i class="fab fa-twitter icon"></i>
+                        </div>
+                        <div class="follow-us-icon-container">
+                            <i class="fab fa-instagram icon"></i>
+                        </div>
+                        <div class="follow-us-icon-container">
+                            <i class="fab fa-facebook icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="https://thumbs.dreamstime.com/b/tailoring-emblem-mannequin-dummy-banner-lettering-sew-happiness-fashion-logo-design-vector-eps-120339304.jpg" class="fashion-logo" />
+                    <h1 class="footer-section-mail-id">fashionrcv@gmail.com</h1>
+                    <p class="footer-section-address">
+                        Main Road,Ramachandrapuram,Andhra Pradesh
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

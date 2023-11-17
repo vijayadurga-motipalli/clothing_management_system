@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-shirts Shopping</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* background-color: #f5f5f5; */
+            background-image: url("https://static.toiimg.com/photo/msid-81772433/81772433.jpg");
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: transparent;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .dress {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .dress-image {
+            flex:1;
+            padding: 10px;
+        }
+        .dress-title:hover
+        {
+            font-size: 36px;
+        }
+        .dress-description:hover
+         {
+            
+            font-size: 20px;
+        }
+        .dress-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 30px;
+        }
+        .dress-image img:hover
+        {
+           box-shadow: 15px 15px 20px ; 
+        }
+        .dress-details {
+            flex: 2;
+            padding: 10px;
+        }
+
+        .dress-title {
+            font-size: 24px;
+            margin: 0;
+            color: white;
+        }
+
+        .dress-description {
+            margin-top: 10px;
+            font-size: 16px;
+            color: white;
+        }
+
+        .dress-price {
+            font-size: 20px;
+            color: #e74c3c;
+        }
+
+        .add-to-cart {
+            margin-top: 10px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore ur interests</h1>
+    </header>
+    <div class="container">
+        <div class="dress">
+            <div class="dress-image">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT2ym-cQZgUv7egfdNQ1DNcncQb36Amf-hhghJfBnhBzIUyPJ5ilhJaYOXYiKHrKZLpbkbA7YqVnrmS8u43ZhGz_WuXQPgCbYQ0oMR6ZVg&usqp=CAE" height="200px" width=200px alt="Dress 1">
+            </div>
+            <div class="dress-details">
+                <h2 class="dress-title">Deluna</h2>
+                <p class="dress-description">Cotton Plain Henley T Shirts.</p>
+                <p class="dress-price">₹247 21% Off</p>
+                <div class="add-to-cart button">
+                    <a href="buy.html">
+                    <button>Buy Now</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+            <div class="dress">
+                <div class="dress-image">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR-JNCWERV0Cagv10VBo5r-GqDX-eFL9o7gqfS0pDB7e6OoliUtz-MtTNvnhHCTnzoQvg9t2AIgaVG9Q39KxvkXAbd--xVbxCnKyx9fwT4&usqp=CAE" height="200px" width=200px alt="Dress 1">
+                </div>
+                <div class="dress-details">
+                    <h2 class="dress-title">Pause Lavender</h2>
+                    <p class="dress-description">Men Solid Polo Neck Cotton Blend Black T-Shirt</p>
+                    <p class="dress-price">₹399 61% Off</p>
+                    <div class="add-to-cart button">
+                        <a href="buy.html">
+                        <button>Buy Now</button>
+                        </a>
+                    </div>
+                </div>  
+            </div>
+            <div class="dress">
+                <div class="dress-image">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2023/3/293243548/KJ/TP/ZL/186420270/men-printed-round-neck-dark-blue-t-shirt-500x500.jpg" height="200px" width=200px alt="Dress 1">
+                </div>
+                <div class="dress-details">
+                    <h2 class="dress-title">URBAN A-LINE</h2>
+                    <p class="dress-description">Men navy blue printed Cotton t-shirt rounded neck.</p>
+                    <p class="dress-price">₹500 11% Off</p>
+                    <div class="add-to-cart button">
+                        <a href="buy.html">
+                        <button>Buy Now</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="dress">
+                <div class="dress-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqXJ6vLi7T9438-2JbafSXCH0jASgweA05wQ&usqp=CAU" height="200px" width=200px alt="Dress 1">
+                </div>
+                <div class="dress-details">
+                    <h2 class="dress-title">INVICTUS</h2>
+                    <p class="dress-description">Love Heart Couple T-Shirt</p>
+                    <p class="dress-price">₹1200 20% Off</p>
+                    <div class="add-to-cart button">
+                        <a href="buy.html">
+                        <button>Buy Now</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="dress">
+                <div class="dress-image">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQUaxDamfbk9cj0kwPm_ZJp266mrdV5Om7wLi2XCSiWnUo-Ul2CVPN82F1as6q3kMNMp5b4axqk-vwydwnDLs3GhYqkZE2wyVIcesz0nXc&usqp=CAE" height="200px" width=200px alt="Dress 1">
+                </div>
+                <div class="dress-details">
+                    <h2 class="dress-title">Mast & Harbour</h2>
+                    <p class="dress-description">Men Ombré Hoodie Men Zip Coat Hooded Track Hoodie Men Sweatshirt Zip Up.</p>
+                    <p class="dress-price">₹11,770 31% Off</p>
+                    <div class="add-to-cart button">
+                        <a href="buy.html">
+                        <button>Buy Now</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="dress">
+                <div class="dress-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQHLWJN5mhFic5q2MQgvlbGdLZkXplawUsSum2Y9Wrp-9xizQjPt2q9hi8BpPFFwcFkO15P7lI3U9NI18Og3jfKaKLcIL-jvEVU-J8dZZvIQjj_Q8JH1g9G&usqp=CAE" height="200px" width=200px alt="Dress 1">
+                </div>
+                <div class="dress-details">
+                    <h2 class="dress-title">Mast & Harbour</h2>
+                    <p class="dress-description">Men Blue Slub FS Cotton T-shirt.</p>
+                    <p class="dress-price">299 11% Off</p>
+                    <div class="add-to-cart button">
+                        <a href="buy.html">
+                        <button>Buy Now</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="dress">
+                <div class="dress-image">
+                    <img src="https://m.media-amazon.com/images/I/61SYgkft35L._UY879_.jpg" height="200px" width=200px alt="Dress 1">
+                </div>
+                <div class="dress-details">
+                    <h2 class="dress-title">ZDlanxa</h2>
+                    <p class="dress-description">Men's Cruze French Terry Cotton Sweatshirt.</p>
+                    <p class="dress-price">₹1,895 71% Off</p>
+                    <div class="add-to-cart button">
+                        <a href="buy.html">
+                        <button>Buy Now</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>

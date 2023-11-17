@@ -1,0 +1,29 @@
+/* styles.css */
+.banner1{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(232, 150, 232);
+  }
+  
+  .content {
+    white-space: nowrap;
+    animation: scroll 20s linear infinite; 
+  }
+  
+  .para{
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 40px;
+    color: rgba(9, 29, 161, 0.992);
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girls Shopping</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* background-color: #f5f5f5; */
+            background-image: url("data:image/jpeg;base64,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");
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+        }
+        .dress-image img:hover
+        {
+           box-shadow: 15px 15px 20px ; 
+        }
+        header {
+            background-color: #333;
+            color: rgb(0, 70, 246);
+            text-align: center;
+            padding: 10px;
+        }
+        .dress-title:hover
+        {
+            font-size: 36px;
+        }
+        .dress-description:hover
+         {
+            
+            font-size: 20px;
+        }
+        h1 {
+            margin: 0;
+            color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: transparent;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .dress {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .dress-image {
+            flex:1;
+            padding: 10px;
+            
+        }
+
+        .dress-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 30px;
+        }
+
+        .dress-details {
+            flex: 2;
+            padding: 10px;
+        }
+
+        .dress-title {
+            font-size: 24px;
+            margin: 0;
+            color: rgb(0, 70, 246);
+        }
+
+        .dress-description {
+            margin-top: 10px;
+            font-size: 16px;
+            color: rgb(0, 70, 246);
+        }
+
+        .dress-price {
+            font-size: 20px;
+            color: #e74c3c;
+        }
+
+        .add-to-cart {
+            margin-top: 10px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore ur interests</h1>
+    </header>
+    <div class="container">
+        <div class="dress">
+            <div class="dress-image">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQVRE8DJFKT5r3aNDX48OOHvs4fNIT3KWLJ6ukXV6AVfZ_ftKUOVokiKlS3RNr3JORGiOGJotQh6heYh-7NibVVieLhpSOpJT7npxa_zMs&usqp=CAE" height="200px" width=200px alt="Dress 1">
+            </div>
+            <div class="dress-details">
+                <h2 class="dress-title">TIOR</h2>
+                <p class="dress-description">Striped Fit & Flare Dress with Bow Accent.</p>
+                <p class="dress-price">₹567 21% Off</p>
+                <div class="add-to-cart button">
+                    <a href="buy.html">
+                    <button>Buy Now</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+            <div class="dress">
+                <div class="dress-image">
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS-xktkN8W4dnY2RTUfvVlacy6aVxpaOjcoWpv-GYOKS7z2lc-9QLhlpacbH3YLzXiVhbcXhHbW7b2GUogaa9k8kSUFp5wSJ9vz3TZo0fPIvx5x9B_HdpY_Bg&usqp=CAE" height="200px" width=200px alt="Dress 1">
+                </div>
+                <div class="dress-details">
+                    <h2 class="dress-title">Akhilam</h2>
+                    <p class="dress-description">Butterfly net dress.</p>
+                    <p class="dress-price">₹279 61% Off</p>
+                    <div class="add-to-cart button">
+                        <a href="buy.html">
+                        <button>Buy Now</button>
+                        </a>
+                    </div>
+                </div>  
+            </div>
+            <div class="dress">
+                <div class="dress-image">
+                    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcScdSjQsCqNFMcJhEJZ-F331Vrlxq942o0H-yUZSkWROJj8s65PE-SnR6e7ijZMsrPFqIkE1gfMTbcAOGG3w-G8cRW_uw7OxDtT-fko5cXcJiFRBLsqdxugEA&usqp=CAE" height="200px" width=200px alt="Dress 1">
+                </div>
+                <div class="dress-details">
+                    <h2 class="dress-title">Analog fashions.</h2>
+                    <p class="dress-description">Fashion Dream Girls Maxi Length Flared Dress.</p>
+                    <p class="dress-price">₹999 11% Off</p>
+                    <div class="add-to-cart button">
+                        <a href="buy.html">
+                        <button>Buy Now</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="dress">
+                <div class="dress-image">
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRIg2KK0x9FvCIYMQ02U6hYwNDpYkWPBeoiQymyUfwB2ACk4J8dgPS1om3ifen6nii14z5f2C_U9BpJv4cRpBHO5ZVbuthruSFvZyDnuw&usqp=CAE" height="200px" width=200px alt="Dress 1">
+                </div>
+                <div class="dress-details">
+                    <h2 class="dress-title">PAREVDEE </h2>
+                    <p class="dress-description">Soleilclo Three Fourth Sleeves Tartan Checked Designed Smocked Detailed Dress - Navy Blue.</p>
+                    <p class="dress-price">₹500 20% Off</p>
+                    <div class="add-to-cart button">
+                        <a href="buy.html">
+                        <button>Buy Now</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="dress">
+                <div class="dress-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSRHsAafoFsZAtufaCUQ3yocEGafJeYy-yt1efLQ9N_kApPTTfx5yhtXfEGySpucN97F4j1E0BnHxwtGqWQd_wQjASmAyLz9Xy7rB58tCkh&usqp=CAE" height="200px" width=200px alt="Dress 1">
+                </div>
+                <div class="dress-details">
+                    <h2 class="dress-title">ishin </h2>
+                    <p class="dress-description">Girls Pink Ruffle Embellished Full-Sleeve Casual Dress.</p>
+                    <p class="dress-price">₹1110 31% Off</p>
+                    <div class="add-to-cart button">
+                        <a href="buy.html">
+                        <button>Buy Now</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="dress">
+                <div class="dress-image">
+                    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRX_98QEtdawVz0eaoeGVZQTZyKVwIKewXNisZhHcmfpCydzSo50xQQyuQu6S3cvMzV8NvOVF-XHPu4CzeqHZTW6vGIuXW9zHS_Gl4HcfA&usqp=CAE" height="200px" width=200px alt="Dress 1">
+                </div>
+                <div class="dress-details">
+                    <h2 class="dress-title">rushak fashions</h2>
+                    <p class="dress-description">Girls Blue Sleeveless Solid Casual Dress.</p>
+                    <p class="dress-price">₹990 11% Off</p>
+                    <div class="add-to-cart button">
+                        <a href="buy.html">
+                        <button>Buy Now</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="dress">
+                <div class="dress-image">
+                    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ9iRLQZjVtp9ujxKovqTH07KmsK-L7nAYlFGpb7E7CqwEOCcdZEceye40nnxXflKNBD8U7jdDkLUrBdZ1_LBei0JyM7fbO8gAAB7Zxezb57n273VyZj2kJCA&usqp=CAE" height="200px" width=200px alt="Dress 1">
+                </div>
+                <div class="dress-details">
+                    <h2 class="dress-title">Pink Chink</h2>
+                    <p class="dress-description">Layers Party Dress.</p>
+                    <p class="dress-price">₹700 71% Off</p>
+                    <div class="add-to-cart button">
+                        <a href="buy.html">
+                        <button>Buy Now</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>

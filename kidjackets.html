@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jackets Shopping</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* background-color: #f5f5f5; */
+            background-image: url("https://wallpapers.com/images/hd/ppt-background-3nj26x8y4dibkpkn.jpg");
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+        }
+
+        header {
+            background-color: #333;
+            color: rgb(12, 32, 255);
+            text-align: center;
+            padding: 10px;
+        }
+
+        h1 {
+            margin: 0;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: transparent;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .dress {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .dress-image {
+            flex:1;
+            padding: 10px;
+        }
+
+        .dress-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 30px;
+        }
+
+        .dress-details {
+            flex: 2;
+            padding: 10px;
+        }
+
+        .dress-title {
+            font-size: 24px;
+            margin: 0;
+            color: black;
+        }
+
+        .dress-description {
+            margin-top: 10px;
+            font-size: 16px;
+            color: black;
+        }
+
+        .dress-price {
+            font-size: 20px;
+            color: #e74c3c;
+        }
+        .dress-image img:hover
+        {
+           box-shadow: 15px 15px 20px ; 
+        }
+        .dress-title:hover
+        {
+            font-size: 36px;
+        }
+        .dress-description:hover
+         {
+            
+            font-size: 20px;
+        }
+        .add-to-cart {
+            margin-top: 10px;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore ur interests</h1>
+    </header>
+    <div class="container">
+        <div class="dress">
+            <div class="dress-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi0cC9q8gGQWWhCqQ86pvg9N4v5msm7vPcVQ&usqp=CAU" height="200px" width=200px alt="Dress 1">
+            </div>
+            <div class="dress-details">
+                <h2 class="dress-title">JUIRI </h2>
+                <p class="dress-description">JUIRI jacket for children.</p>
+                <p class="dress-price">₹1009 -21% Off</p>
+                <div class="add-to-cart button">
+                    <a href="buy.html">
+                    <button>Buy Now</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+            <div class="dress">
+                <div class="dress-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBKe23BDkv2UBAQSvzeoqo0FfRh-dWF5pwYQ&usqp=CAU" height="200px" width=200px alt="Dress 1">
+                </div>
+                <div class="dress-details">
+                    <h2 class="dress-title">Elite</h2>
+                    <p class="dress-description">Elite leather jacket for children.</p>
+                    <p class="dress-price">₹900 -61% Off</p>
+                    <div class="add-to-cart button">
+                        <a href="buy.html">
+                        <button>Buy Now</button>
+                        </a>
+                    </div>
+                </div>  
+            </div>
+            <div class="dress">
+                <div class="dress-image">
+                    <img src="data:image/jpeg;base64,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" height="200px" width=200px alt="Dress 1">
+                </div>
+                <div class="dress-details">
+                    <h2 class="dress-title">Swi Stylish </h2>
+                    <p class="dress-description">Swi Stylish jacket for children.</p>
+                    <p class="dress-price">₹977 -11% Off</p>
+                    <div class="add-to-cart button">
+                        <a href="buy.html">
+                        <button>Buy Now</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="dress">
+                <div class="dress-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5bpOuSEG0B-Tv841f3tz07QusaAOztPagJA&usqp=CAU" height="200px" width=200px alt="Dress 1">
+                </div>
+                <div class="dress-details">
+                    <h2 class="dress-title">SHINGORA </h2>
+                    <p class="dress-description">SHINGORA jacket for children.</p>
+                    <p class="dress-price">₹742 -20% Off</p>
+                    <div class="add-to-cart button">
+                        <a href="buy.html">
+                        <button>Buy Now</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="dress">
+                <div class="dress-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHmBqVBWVz0gILkPoOmeYpg-D_J8fBCl5cTA&usqp=CAU" height="200px" width=200px alt="Dress 1">
+                </div>
+                <div class="dress-details">
+                    <h2 class="dress-title">Swi Stylish</h2>
+                    <p class="dress-description">Swi Stylish jacket for children.</p>
+                    <p class="dress-price">₹700 -31% Off</p>
+                    <div class="add-to-cart button">
+                        <a href="buy.html">
+                        <button>Buy Now</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="dress">
+                <div class="dress-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSy4QyFCzVucpSHfnZGH04vB0KsFDZf7FSZQ&usqp=CAU" height="200px" width=200px alt="Dress 1">
+                </div>
+                <div class="dress-details">
+                    <h2 class="dress-title">FableStreet</h2>
+                    <p class="dress-description">FableStreet jacket for childen.</p>
+                    <p class="dress-price">₹500 -11% Off</p>
+                    <div class="add-to-cart button">
+                        <a href="buy.html">
+                        <button>Buy Now</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="dress">
+                <div class="dress-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeigKkTJVcZk-tA8z9glrbr0aYZROJwDOU1w&usqp=CAU" height="200px" width=200px alt="Dress 1">
+                </div>
+                <div class="dress-details">
+                    <h2 class="dress-title">Peter England</h2>
+                    <p class="dress-description">superb flexibility and comfortable jacket for children.</p>
+                    <p class="dress-price">₹895 -71% Off</p>
+                    <div class="add-to-cart button">
+                        <a href="buy.html">
+                        <button>Buy Now</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>

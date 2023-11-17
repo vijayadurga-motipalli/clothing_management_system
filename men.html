@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men categories</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <!-- <img src="https://thumbs.dreamstime.com/b/tailoring-emblem-mannequin-dummy-banner-lettering-sew-happiness-fashion-logo-design-vector-eps-120339304.jpg" class="fashion-logo " /> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" id="navItem1" href="#wcuSection">
+                        Why choose us
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    <a class="nav-link" href="#exploreMenuSection" id="navItem2">Explore Menu</a>
+                    <a class="nav-link" href="#deliveryPaymentSection" id="navItem3">Delivery & Payment</a>
+                    <a class="nav-link" href="#followUsSection" id="navItem4">Follow Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="explore-menu-section pt-5 pb-5 m-5" id="exploreMenuSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="menu-section-heading mt-2">Find The Perfect Dress For You</h1>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="shadow menu-item-card p-3 mb-3 ">
+                        <img src="data:image/jpeg;base64,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" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Shirts</h1>
+                        <a href="shirts.html" class="menu-item-link">
+                            View All
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKHeodxgAspKOLpOABuv95wqV4B5HmCfmpI8OeagKZVal_uLVPa_ruYSZBBNug8anlS9U&usqp=CAU" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">T-Shirts</h1>
+                        <a href="tshirts.html" class="menu-item-link">
+                            View All
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div> 
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3 ">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzAvulticeQgvUmYxN1Y6rxglqRGXR-t-3Gg&usqp=CAU" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Jeans</h1>
+                        <a href="tshirts.html" class="menu-item-link">
+                            View All
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3 ">
+                        <img src="https://ik.imagekit.io/wb2spwtue/kreeva/tr:h-430,w-315,q-80,cm-pad_resize/media/catalog/product/1/0/1004-1-min_4382db9f-8891-4ef6-8555-7b4bd8e42e2a.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Suits &blazers</h1>
+                        <a href="blazers.html" class="menu-item-link">
+                            View All
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3 ">
+                        <img src="https://www.stylesgap.com/wp-content/uploads/2020/03/Formal-Kurtas-Shalwar-Kameez-For-Men-Boys-by-J-1.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Kurtas</h1>
+                        <a href="menkurtha.html" class="menu-item-link">
+                            View All
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3 ">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSybniKMcpA1N8YXvxd_l-WWy0VNF6F7IoDty3u2kmU0SvRv2eMYOE4aNhWrtsMl51vSnY&usqp=CAU" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Jackets</h1>
+                        <a href="jackets.html" class="menu-item-link">
+                            View All
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3 ">
+                        <img src="https://m.media-amazon.com/images/I/41XBs36s88L.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Active wear</h1>
+                        <a href="activeware.html" class="menu-item-link">
+                            View All
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3 ">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAB_qoS3mLkMRLJVn1aCNxPDTjKFK-nxVZLA&usqp=CAU" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Sweat wear</h1>
+                        <a href="sweartwear.html" class="menu-item-link">
+                            View All
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
